@@ -30,7 +30,6 @@ Create the src/resources/psk-typewriter.js:
 ```
 import Vue from "vue";
 import TypeWriter from "psk-typewriter";
-import "psk-typewriter/dist/TypeWriter.css";
 
 Vue.use(TypeWriter, { TypeWriterName: "MyTypeWriter" });
 ```
