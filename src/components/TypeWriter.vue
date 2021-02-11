@@ -29,6 +29,7 @@ export default {
                 this.writing += this.text.charAt(this.index);
                 this.index++;
                 setTimeout(() => { this.typeWriter() }, this.timeout);
+                return;
             }
 
             this.$refs.text.scrollIntoView();
