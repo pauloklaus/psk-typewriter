@@ -28,6 +28,10 @@ export default {
             if (this.index < this.text.length) {
                 this.writing += this.text.charAt(this.index);
                 this.index++;
+
+                if (this.$refs["text"])
+                    this.$refs.text.scrollIntoView(false);
+
                 setTimeout(() => { this.typeWriter() }, this.timeout);
                 return;
             }
