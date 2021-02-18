@@ -34,7 +34,7 @@ import TypeWriter from "psk-typewriter";
 Vue.use(TypeWriter, { TypeWriterName: "MyTypeWriter" });
 ```
 
-### Import psk-typewriter and dependencies
+### Import psk-typewriter
 
 The "src/main.js" file should look like this:
 ```
