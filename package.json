@@ -1,6 +1,6 @@
 {
     "name": "psk-typewriter",
-    "version": "0.1.4",
+    "version": "0.2.0",
     "description": "Vue component to simulate typing text.",
     "author": {
         "name": "Paulo Sergio Klaus",

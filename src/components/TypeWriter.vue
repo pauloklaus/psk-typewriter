@@ -1,10 +1,14 @@
 <template>
-    <div ref="text">{{ writing }}</div>
+    <div ref="text">{{ writing }}<span>{{ endChar }}</span></div>
 </template>
 
 <script>
 export default {
     props: {
+        endChar: {
+            type: String,
+            default: "_"
+        },
         text: {
             type: String,
             default: "\"Follow the white rabbit.\""
@@ -36,7 +40,7 @@ export default {
                 return;
             }
 
-            this.$refs.text.scrollIntoView();
+            this.endChar = "";
             this.$emit("finished");
         }
     }
