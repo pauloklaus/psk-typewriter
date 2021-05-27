@@ -2,32 +2,36 @@
 
 Vue component to simulate typing text.
 
-* Report bugs: https://github.com/pauloklaus/psk-typewriter/issues
-* Live test: https://pauloklaus.com.br/playground
+* Report bugs: <https://github.com/pauloklaus/psk-typewriter/issues>
+* Live test: <https://pauloklaus.com.br/playground>
 
 ## Install
 
 Create a new vue project:
-```
+
+```shell
 vue create
 ```
 
 Install component:
-```
+
+```shell
 npm install --save psk-typewriter
 ```
 
 ## Environment setting
 
 Make a src/resources folder at the root:
-```
+
+```shell
 mkdir src/resources
 ```
 
 ### Configure the psk-typewriter
 
 Create the src/resources/psk-typewriter.js:
-```
+
+```javascript
 import Vue from "vue";
 import TypeWriter from "psk-typewriter";
 
@@ -37,7 +41,8 @@ Vue.use(TypeWriter, { TypeWriterName: "MyTypeWriter" });
 ### Import psk-typewriter
 
 The "src/main.js" file should look like this:
-```
+
+```javascript
 import Vue from "vue";
 import App from "./App.vue";
 
@@ -52,7 +57,8 @@ new Vue({
 ```
 
 ## How to use (example in App.vue)
-```
+
+```vue
 <template>
     <div>
         <my-type-writer text="And now?" @finished="playExplore = true" />
@@ -89,6 +95,7 @@ finished | When the message is all displayed
 ## Using in the browser
 
 To use directly in the browser, import psk-typewriter:
-```
+
+```html
 <script src="https://unpkg.com/psk-typewriter" />
 ```
