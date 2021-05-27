@@ -9,6 +9,8 @@
     "repository": "https://github.com/pauloklaus/psk-typewriter",
     "bugs": "https://github.com/pauloklaus/psk-typewriter/issues",
     "keywords": [
+        "vue",
+        "vuejs",
         "effect",
         "text",
         "typewriter"
