@@ -85,6 +85,7 @@ Property | Description | Required | Default
 endChar | Character used at the end of the text while it is displayed. | no | _ (underline char)
 text | Text to display | yes | :)
 timeout | Time to display the next character | no | 15
+autoscroll | Scroll the screen to the message | no | false
 
 ## Events
 

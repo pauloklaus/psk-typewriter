@@ -16,6 +16,10 @@ export default {
         timeout: {
             type: Number,
             default: 15
+        },
+        autoscroll: {
+            type: Boolean,
+            default: false,
         }
     },
     created() {
@@ -33,7 +37,7 @@ export default {
                 this.writing += this.text.charAt(this.index);
                 this.index++;
 
-                if (this.$refs["text"])
+                if (this.autoscroll && this.$refs["text"])
                     this.$refs.text.scrollIntoView(false);
 
                 setTimeout(() => { this.typeWriter() }, this.timeout);
