@@ -1,5 +1,5 @@
 <template>
-    <div ref="text">{{ writing }}<span>{{ endChar }}</span></div>
+    <div ref="text">{{ writing }}<span>{{ showEndChar }}</span></div>
 </template>
 
 <script>
@@ -27,6 +27,7 @@ export default {
     },
     data() {
         return {
+            showEndChar: this.endChar,
             writing: "",
             index: 0
         }
@@ -41,11 +42,12 @@ export default {
                     this.$refs.text.scrollIntoView(false);
 
                 setTimeout(() => { this.typeWriter() }, this.timeout);
-                return;
+            }
+            else {
+                this.showEndChar = "";
+                this.$emit("finished");
             }
 
-            this.endChar = "";
-            this.$emit("finished");
         }
     }
 }
